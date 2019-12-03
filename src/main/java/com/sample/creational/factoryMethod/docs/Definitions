@@ -1,0 +1,14 @@
+Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, 
+but allows subclasses to alter the type of objects that will be created.
+
+*************************
+		Problem
+*************************
+1. Assume we have Messaging service, where initially used to handle TEXT messages and all was good
+2. Now there was a new requirement to handle JSON Messages too, Adding JSON to Code might be difficult as Code is tightly coupled with TEXT
+3. As a result, you will end up with pretty nasty code, 
+
+*************************
+		Solution
+*************************
+1. 

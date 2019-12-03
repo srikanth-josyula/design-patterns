@@ -1,0 +1,5 @@
+We have a abstract product class called post, which has attributes like id, title, createdOn and pulishedOn and their methods.
+We have multiple subclasses which extent this post like NewsPost, BlogPost and ProductPost
+NewPost is a class that represents news articles that are published on the site with attributes like headLine and newsTime.
+BlogPost is a class that represents articles that are published on the site with attributes like author and tags array.
+create a simple factory for creation of different posts on website
