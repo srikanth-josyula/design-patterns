@@ -1,5 +1,0 @@
-We have a Message class this is our product class, 
-which is a base class (interface) and we want to create objects of this class or its one of its subclass. methods like void addDefaultHeader() and abstract getContent()
-we have two subclasses TextMessage and JSONMessage classes which implement base class and overrides the getContent() method.
-The two sub classes return the output in the specified format
-Create a factory method design pattern to create objects
