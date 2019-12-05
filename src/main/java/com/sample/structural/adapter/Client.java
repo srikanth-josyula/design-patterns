@@ -1,6 +1,5 @@
 package com.sample.structural.adapter;
 
-import com.sample.structural.adapter.service.JSONMessage;
 import com.sample.structural.adapter.service.impl.XMLMessageImpl;
 
 /**
@@ -16,8 +15,8 @@ public class Client {
 		xml.getXMLProdcers();
 
 		// Now my XML data behaves as JSON data
-		JSONMessage dataAdapter = new ClientInterface(xml);
+		ClientInterface dataAdapter = new ClientInterface(xml);
 		System.out.print("Return Format of Data Received is after Upgrade app :: ");
-		dataAdapter.getJSONProdcers();
+		dataAdapter.converToServiceFormat();
 	}
 }

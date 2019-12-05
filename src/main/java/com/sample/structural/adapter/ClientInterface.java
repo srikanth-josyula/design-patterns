@@ -1,9 +1,8 @@
 package com.sample.structural.adapter;
 
-import com.sample.structural.adapter.service.JSONMessage;
 import com.sample.structural.adapter.service.XMLMessage;
 
-public class ClientInterface implements JSONMessage{
+public class ClientInterface{
 	
 	public XMLMessage adaptee;
 	
@@ -11,15 +10,7 @@ public class ClientInterface implements JSONMessage{
 		this.adaptee = adaptee;
 	}
 	
-	public void converToServiceFormat(){
-		adaptee.getXMLProdcers();
-	}
-
-	public String getContent() {
-		return adaptee.getContent();
-	}
-
-	public void getJSONProdcers() {
+	public void converToServiceFormat() {
 		adaptee.getXMLProdcers();
 	}
 }
