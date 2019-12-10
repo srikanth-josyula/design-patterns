@@ -1,0 +1,25 @@
+Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+
+PROBLEM ::
+
+1. Imagine that you must make your code work with a broad set of objects that belong to a sophisticated library or framework.
+ 	Ordinarily, you’d need to initialize all of those objects, keep track of dependencies, execute methods in the correct order, and so on.
+2. As a result, the business logic of your classes would become tightly coupled to the implementation details of 3rd-party classes, 
+	making it hard to comprehend and maintain.
+
+SOLUTION ::
+
+1. A facade is a class that provides a simple interface to a complex subsystem which contains lots of moving parts. 
+2. A facade might provide limited functionality in comparison to working with the subsystem directly. However, it includes only those features that clients really care about.
+3. Having a facade is handy when you need to integrate your app with a sophisticated library that has dozens of features, but you just need a tiny bit of its functionality.
+	
+EXAMPLE ::
+	
+In this example, we are creating a report generator which has multiple steps to create any report. 
+For example, it shall first create report header, footer, add data rows, format the report and then write the report in desirable format (pdf, html etc).
+
+REAL WORLD USAGE ::
+
+In Java programming, we must have connected to a database to fetch some data. We simply call the method dataSource.getConnection() to get the connection but internally 
+a lot of things happen such as loading the driver, creating connection or fetching connection from pool, 
+update stats and then return the connection reference to caller method. It is another example of Facade pattern in programming world.
