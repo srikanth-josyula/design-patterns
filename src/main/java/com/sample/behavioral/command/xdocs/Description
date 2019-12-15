@@ -1,0 +1,8 @@
+Command is a behavioral design pattern that turns a request into a stand-alone object that contains 
+all information about the request. This transformation lets you parameterize methods with different requests, 
+delay or queue a request’s execution, and support undoable operations.
+
+PROBLEM ::
+Suppose we need to build a remote control for home automation system which shall control different 
+lights/electrical units of the home. A single button in remote may be able to perform same operation on similar devices 
+e.g. a TV ON/OFF button can be used to turn ON/OFF different TV set in different rooms.
