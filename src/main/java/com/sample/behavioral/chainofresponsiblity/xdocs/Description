@@ -1,0 +1,13 @@
+Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. 
+Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+
+PROBLEM ::
+The problem statement is to design a system for support service system consisting of front desk, 
+supervisor, manager and director. Any client can call to front desk and will ask for a solution. 
+If front desk is able to solve the issue, it will; otherwise will pass to supervisor. Similarly, 
+supervisor will try to solve the issue and if he is able to then he will solve; else pass to manager. 
+Same way, manager will either solve the issue or pass to director. Director will either solve the issue or reject it.
+
+SOLUTION ::
+
+Support desk > supervisor > manager > director
